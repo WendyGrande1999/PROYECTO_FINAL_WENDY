@@ -1,109 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main">
+    android:background="#B3D0F3"
+    tools:context=".RegistroDocente">
 
-    <Button
-        android:id="@+id/btn_agregarDocente"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="REGISTRO DE DOCENTE"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/et_NombreDocente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="100dp"
-        android:text="AGREGAR DOCENTE"
+        android:hint="Nombre del docente"/>
+
+    <EditText
+        android:id="@+id/et_profesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:hint="Profesion"/>
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="guardar"
         android:textColor="#FDFCFC"
         android:background="@drawable/estiloboton"
         android:shadowColor="#2314A8"
         android:shadowDx="-3"
         android:shadowDy="0"
         android:shadowRadius="8"
-        android:drawableRight="@drawable/ic_person_add_black_24dp"
+        android:drawableRight="@drawable/ic_guardar"
         android:paddingRight="80dp"
         android:drawablePadding="-120dp"
         />
-
     <Button
-        android:id="@+id/btn_agregarModulos"
+        android:id="@+id/btn_buscarporcodigo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
-        android:text="Agregar modulos"
+        android:text="buscar por codigo"
         android:textColor="#FDFCFC"
         android:background="@drawable/estiloboton"
         android:shadowColor="#2314A8"
         android:shadowDx="-3"
         android:shadowDy="0"
         android:shadowRadius="8"
-        android:drawableStart="@drawable/ic_add"
-        android:paddingLeft="80dp"
-        android:drawablePadding="-80dp"
+        android:drawableRight="@drawable/ic_buscar"
+        android:paddingRight="80dp"
+        android:drawablePadding="-120dp"
         />
-
     <Button
-        android:id="@+id/btn_registrarSemana"
+        android:id="@+id/btn_consultarDocentes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
-        android:text="Registrar semana"
+        android:text="consultar docentes"
         android:textColor="#FDFCFC"
         android:background="@drawable/estiloboton"
-        android:drawableStart="@drawable/ic_today_black_24dp"
         android:shadowColor="#2314A8"
         android:shadowDx="-3"
         android:shadowDy="0"
-        android:paddingLeft="80dp"
-        android:drawablePadding="-80dp"
         android:shadowRadius="8"
+        android:drawableRight="@drawable/ic_view"
+        android:paddingRight="80dp"
+        android:drawablePadding="-120dp"
         />
-
     <Button
-        android:id="@+id/btn_registrarClase"
+        android:id="@+id/btn_editar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
-        android:text="REGISTRAR CLASE"
+        android:text="editar"
         android:textColor="#FDFCFC"
         android:background="@drawable/estiloboton"
         android:shadowColor="#2314A8"
-        android:drawableStart="@drawable/ic_view_agenda_black_24dp"
         android:shadowDx="-3"
-        android:paddingLeft="80dp"
-        android:drawablePadding="-80dp"
         android:shadowDy="0"
         android:shadowRadius="8"
+        android:drawableRight="@drawable/ic_edit_black_24dp"
+        android:paddingRight="80dp"
+        android:drawablePadding="-120dp"
         />
-
     <Button
-        android:id="@+id/btn_regitrarTarea"
+        android:id="@+id/btn_limpiar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
-        android:text="Registrar tarea"
+        android:text="limpiar"
         android:textColor="#FDFCFC"
         android:background="@drawable/estiloboton"
         android:shadowColor="#2314A8"
-        android:drawableStart="@drawable/ic_work_black_24dp"
-        android:paddingLeft="80dp"
-        android:drawablePadding="-80dp"
         android:shadowDx="-3"
         android:shadowDy="0"
         android:shadowRadius="8"
-        android:layout_marginBottom="20dp"
+        android:drawableRight="@drawable/ic_check_circle_black_24dp"
+        android:paddingRight="80dp"
+        android:drawablePadding="-120dp"
         />
 
 </LinearLayout>

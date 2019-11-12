@@ -19,6 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".RegistroDocente"></activity>
+        <activity android:name=".ListadeDocentes"></activity>
+        <activity android:name=".DetalleDocente"></activity>
+        <activity android:name=".ListaTiposActivity"></activity>
+        <activity android:name=".DetalleTipoActivity"></activity>
+        <activity android:name=".ListaEmpleadosActivity"></activity>
+        <activity android:name=".RegistroEmpleadoActivity"></activity>
+        <activity android:name=".RegistroTiposActivity"></activity>
     </application>
 
 </manifest>

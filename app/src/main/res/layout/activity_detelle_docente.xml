@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3D0F3"
+    tools:context=".DetalleDocente">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFORMACION DEL DOCENTE"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="italic"
+        android:textSize="18sp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del docente"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/et_NombreDocente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wendy Elizabeth Grande"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pofesion"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/et_profesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jfvuh"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>
